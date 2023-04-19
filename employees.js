@@ -69,9 +69,9 @@ empOne.getSchedule()
 
 //CODE HERE
 let empTwo = {...empOne}
-let Nick = empTwo
+empTwo['name'] = "Nick";
 
-console.log(Nick)
+console.log(empTwo)
 
 //////////////////PROBLEM }2////////////////////
 /*  
@@ -126,7 +126,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-let manager = new Manager("winston", "weekday mornings, weekday afternoons", "Cece and Schmidt")
+let manager = new Manager("winston", "weekday mornings, weekday afternoons", ["Cece" ,"Schmidt"])
 
 /*
     Call the `getEmployees` method on the

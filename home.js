@@ -126,12 +126,16 @@ const deals = [
 
 //CODE HERE
 
-//for(let i = 0; i < deals.length; i++) {
-    deals.title = deals[0].title.replace("15","10")
-    console.log(deals.title)
-     //}
+deals.forEach(e => {
+    if (e.title === '15% Off!') {
+        e.title = e.title.replace("15","10");
+    }
+    console.log(e.title)
+});
 
 
+    //  deals.title = deals[0].title.replace("15","10")
+    //  console.log(deals.title)
 /*
     The restaurant is going to continue its
     family deal for another month. 
